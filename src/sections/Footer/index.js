@@ -23,15 +23,11 @@ const Footer = () => {
             <Col className="lg-3 sm-6">
               <Box className="footer-widgets company-desc">
                 <img src={cryptikFooterLogo} alt="cryptik footer logo" />
-                <Text>
-                  Attention in when in just something bread not hundred well,
-                  muff value emerge on the known officers.
-                </Text>
 
                 <Box className="contact-info">
                   <Link to="#">
                     {" "}
-                    <FaPhoneAlt /> contact@cryptik.com{" "}
+                    <FaPhoneAlt /> blochain-options@info.com{" "}
                   </Link>
                   <Link to="#">
                     {" "}
@@ -42,51 +38,18 @@ const Footer = () => {
             </Col>
             <Col className="lg-3 sm-6">
               <Box className="footer-widgets">
-                <Heading as="h2">Service</Heading>
-                <List>
-                  <ListItem>
-                    <Link to="#">Web Design</Link>
-                  </ListItem>
-                  <ListItem>
-                    <Link to="#">Web Development</Link>
-                  </ListItem>
-                  <ListItem>
-                    <Link to="#">UXUI Design</Link>
-                  </ListItem>
-                  <ListItem>
-                    <Link to="#">Graphics Design</Link>
-                  </ListItem>
-                  <ListItem>
-                    <Link to="#">Software development</Link>
-                  </ListItem>
-                  <ListItem>
-                    <Link to="#">Content</Link>
-                  </ListItem>
-                </List>
-              </Box>
-            </Col>
-            <Col className="lg-3 sm-6">
-              <Box className="footer-widgets">
                 <Heading as="h2">About Us</Heading>
                 <List>
                   <ListItem>
                     <Link to="#">About Us</Link>
                   </ListItem>
                   <ListItem>
-                    <Link to="#">Work Portfolio</Link>
-                  </ListItem>
-                  <ListItem>
                     <Link to="#">Team</Link>
-                  </ListItem>
-                  <ListItem>
-                    <Link to="#">Plan & Pricing</Link>
                   </ListItem>
                   <ListItem>
                     <Link to="#">Content</Link>
                   </ListItem>
-                  <ListItem>
-                    <Link to="#">Company News</Link>
-                  </ListItem>
+
                 </List>
               </Box>
             </Col>
@@ -110,9 +73,9 @@ const Footer = () => {
               </Box>
 
               <Box className="copyright-text">
-                <Text>&copy; Cryptik | All right rserved 2020</Text>
+                <Text>&copy; Blockchain Options | All right reserved 2021</Text>
                 <Text as="span">
-                  Designed By <Link to="#">Devscorn</Link>
+                  Designed By <Link to="https://itamoa.com/" target="_blank">Itamoa</Link>
                 </Text>
               </Box>
             </Col>

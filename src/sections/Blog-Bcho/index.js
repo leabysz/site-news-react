@@ -15,7 +15,7 @@ import { BlogPageWrapper } from "./blogBcho.style"
 
 const BlogBchoItems = () => {
   return (
-    <BlogPageWrapper>
+    <BlogPageWrapper id="news">
       <Box className="blog-page-wrapper">
         <Container>
           <Row>

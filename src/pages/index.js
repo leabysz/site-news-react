@@ -7,7 +7,6 @@ import Navigation from "sections/Navigation";
 import BlogBchoItems from "sections/Blog-Bcho";
 import Service from "sections/Service";
 import BannerSlider from "sections/BannerSlider";
-import About from "sections/About";
 import Footer from "sections/Footer";
 
 import theme from "assets/theme/theme";
