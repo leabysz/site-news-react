@@ -7,9 +7,6 @@ import Text from "reusecore/Text"
 import Heading from "reusecore/Heading"
 import { Container, Row, Col } from "reusecore/Layout"
 
-import PageHeader from "../../components/PageHeader"
-import SeideBarBcho from "../../components/Blog-sidebarBcho"
-
 import data from "assets/data/blog"
 import { BlogPageWrapper } from "./blogBcho.style"
 
@@ -23,7 +20,7 @@ const BlogBchoItems = () => {
               <Box className="blog-grid-wrapper">
                 <Row>
                   {/* blog posts */}
-                  {data.posts.map((post, index) => (
+                  {(data.posts.slice(0, 2)).map((post, index) => (
                     <Col key={index} className="xs-12 sm-6">
                       <Box className="post-block">
                         <Box className="post-thumb-block">
@@ -59,8 +56,10 @@ const BlogBchoItems = () => {
               </Box>
             </Col>
 
-            <Col className="xs-12 sm-4">
-              <SeideBarBcho />
+            <Col className="xs-12 sm-2" style={{"display": "flex"}}>
+              <Link to="/blog-grid" style={{"align-self": "center"}}>
+                <h1>View more <IoIosArrowRoundForward /></h1>
+              </Link>
             </Col>
           </Row>
         </Container>

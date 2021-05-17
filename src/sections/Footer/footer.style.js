@@ -3,7 +3,6 @@ import footerBg from "assets/images/footer-bg.png";
 
 const FooterWrapper = styled.div`
   .footer-content-wrapper {
-    background: url(${footerBg});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

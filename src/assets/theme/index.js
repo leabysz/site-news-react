@@ -38,14 +38,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Poppins', sans-serif;
-  color: ${props => props.theme.bodyColor ? props.theme.bodyColor : '#BEABDF'};
+  color: ${props => props.theme.bodyColor ? props.theme.bodyColor : '#aaa'};
   overflow-x: hidden !important;
   font-weight: 400;
   margin: 0;
   padding: 0;
 
     background: rgb(40,13,87);
-    background: linear-gradient(167deg, rgb(0 0 0) 0%, rgb(49 49 49) 100%);
+    background: rgb(0 0 0);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

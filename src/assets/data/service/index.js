@@ -7,22 +7,22 @@ export default {
   services: [
     {
       icon: serviceIcon1,
-      title: "ICO Finance",
+      title: "News",
       body: "The highly the not having with lively Our up with.",
     },
     {
       icon: serviceIcon2,
-      title: "Blockchain",
+      title: "Project",
       body: "The highly the not having with lively Our up with.",
     },
     {
       icon: serviceIcon3,
-      title: "Market News",
+      title: "Tools",
       body: "The highly the not having with lively Our up with.",
     },
     {
       icon: serviceIcon4,
-      title: "Exchange Offer",
+      title: "Learning",
       body: "The highly the not having with lively Our up with.",
     },
   ],
