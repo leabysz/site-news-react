@@ -128,7 +128,7 @@ const NavigationWrap =  styled.header`
   }
   &.scrolled{ 
     box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 30px;
-    background: #290E59;
+    background: #333333cc;
     border-color: ${props => props.theme.NavBGSolid};
     .navbar-wrap{
       border-color: transparent
@@ -160,7 +160,7 @@ const NavigationWrap =  styled.header`
     height: auto;
     min-height: 50px;
     padding: 15px 20px;
-    background: #290E59;
+    background: #333333cc;
     &.scrolled{
         padding: 8px 20px;
         border-color: transparent;
