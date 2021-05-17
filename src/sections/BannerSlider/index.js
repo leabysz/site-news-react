@@ -10,13 +10,14 @@ import BannerSliderWrapper from "./bannerSlider.style";
 const BannerSlider = () => {
   const settings = {
     dots: true,
-    arrows: false,
+    arrows: 2,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     customPaging: (i) => <div>0 {i + 1} </div>,
   };
+
   return (
     <BannerSliderWrapper> 
         <SlickSlider {...settings}>

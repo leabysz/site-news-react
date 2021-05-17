@@ -3,7 +3,7 @@ import styled from "styled-components"
 const BannerWrapper = styled.div`
   position: relative;
   overflow: hidden;
-  padding: 278px 0 150px 0;
+  padding: 220px 0 150px 0;
 
   .banner__thumb {
     position: absolute;

@@ -13,8 +13,11 @@ import { BlogPageWrapper } from "./blogBcho.style"
 const BlogBchoItems = () => {
   return (
     <BlogPageWrapper id="news">
+        
       <Box className="blog-page-wrapper">
         <Container>
+          <h1>Latest News</h1>
+          <p>Check all the latest news in the blockchain options industry and stay up to date</p>
           <Row>
             <Col className="xs-12 lg-8">
               <Box className="blog-grid-wrapper">
@@ -58,7 +61,7 @@ const BlogBchoItems = () => {
 
             <Col className="xs-12 sm-2" style={{"display": "flex"}}>
               <Link to="/blog-grid" style={{"align-self": "center"}}>
-                <h1>View more <IoIosArrowRoundForward /></h1>
+                <h1>View All <IoIosArrowRoundForward /></h1>
               </Link>
             </Col>
           </Row>
