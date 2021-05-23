@@ -2,12 +2,12 @@ import React from "react"
 import Helmet from "react-helmet"
 import PropTypes from "prop-types" 
 
-const Layout = ({ children }) => {
+const Layout = ({sectionName, children }) => {
   return (
     <>
       <Helmet>
         <html lang="en" />
-        <title>{`Cryptik is Next Gen React Nextjs and Gatsbyjs landing`}</title> 
+        <title>{`Blockchain Options`}</title> 
         <link
           rel="stylesheet"
           type="text/css" 

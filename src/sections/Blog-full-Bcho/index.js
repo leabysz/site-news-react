@@ -12,10 +12,10 @@ import PageHeader from "../../components/PageHeader"
 import data from "assets/data/blog"
 import { BlogPageWrapper } from "./blogFull.style"
 
-const BlogGridItems = () => {
+const BlogGridItems = ({categoryName}) => {
   return (
     <BlogPageWrapper>
-      <PageHeader title="Blog Full" author={{ name: "Alexa", profile: "/#" }} />
+      <PageHeader title={categoryName} author={{ name: "Alexa", profile: "/#" }} />
 
       <Box className="blog-page-wrapper">
         <Container>
@@ -31,7 +31,7 @@ const BlogGridItems = () => {
                           <Link to="/blog-single">
                             <img
                               src={post.thumbnail}
-                              alt="cryptik blog image"
+                              alt="cryptik blog"
                             />
                           </Link>
                         </Box>

@@ -8,21 +8,18 @@ import Box from "reusecore/Box"
 import Text from "reusecore/Text"
 
 import PageHeader from "../../components/PageHeader"
-import Sidebar from "../../components/Blog-sidebar"
 
 import blogThumb1 from "assets/images/blog/post/blog-post-4.png"
 import blogThumb2 from "assets/images/blog/post/blog-post-3.png"
 
 import { BlogPageWrapper } from "./blogList.style"
 
-const BlogList = () => {
+const BlogList = ({categoryName}) => {
   return (
     <BlogPageWrapper>
-      <PageHeader title="Blog List" />
+      <PageHeader title={categoryName} />
       <Box className="blog-list-wrapper">
         <Container>
-          <Row>
-            <Col className="sm-12 md-8">
               <Row>
                 <Col className="xs-12">
                   <Box className="post-block list">
@@ -116,11 +113,6 @@ const BlogList = () => {
                   </Box>
                 </Col>
               </Row>
-            </Col>
-            <Col className="sm-12 md-4">
-              <Sidebar />
-            </Col>
-          </Row>
         </Container>
       </Box>
     </BlogPageWrapper>

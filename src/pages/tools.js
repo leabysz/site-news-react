@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Navigation from "sections/Navigation";
-import BlogItems from "sections/Blog-grid";
+import BlogItems from "sections/Blog-full-Bcho";
 import Footer from "sections/Footer";
 
 import theme from "assets/theme/theme";
@@ -14,9 +14,9 @@ const BlogGrid = () => (
   <ThemeProvider theme={theme}>
     <Layout>
       <GlobalStyle />
-      <SEO title="Cryptik Blog Grid" />
+      <SEO title="Tools"/>
       <Navigation />
-      <BlogItems />
+      <BlogItems categoryName={"Tools"}/>
       <Footer/>
     </Layout>
   </ThemeProvider>

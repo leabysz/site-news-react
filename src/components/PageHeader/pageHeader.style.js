@@ -25,7 +25,7 @@ const PageHeaderWrapper = styled.div`
   }
   .page-header {
     text-align: center;
-    padding: 272px 0px 220px;
+    padding: 180px 0px 100px;
     position: relative;
     z-index: 99;
     h1 {

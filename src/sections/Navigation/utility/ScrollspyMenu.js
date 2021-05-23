@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Link as OnepageLink } from "react-scroll"
 
 import {List, ListItem} from 'reusecore/List'
 
@@ -18,16 +17,7 @@ const ScrollspyMenu = ({ menuItems, ...props }) => {
             menu.subItems !== undefined ? "nav-item has-dropdown" : "nav-item"
           }
         >
-          <OnepageLink
-            activeClass="nav-active"
-            to={menu.path}
-            spy={true}
-            smooth={true}
-            offset={parseInt(menu.offset)}
-            duration={700}
-          >
-            {menu.name}
-          </OnepageLink>
+          <Link to={menu.path}>{menu.name}</Link>
           {menu.subItems !== undefined && (
             <List key={index} className="dropdown">
               {menu.subItems.map((subItem, i) => (

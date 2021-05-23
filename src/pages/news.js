@@ -3,23 +3,22 @@ import { ThemeProvider } from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 import Navigation from "sections/Navigation";
-import BlogItems from "sections/Blog-list";
+import BlogItems from "sections/Blog-grid-Bcho";
 import Footer from "sections/Footer";
 
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
 
-const BlogList = () => (
+const BlogGrid = () => (
   <ThemeProvider theme={theme}>
     <Layout>
       <GlobalStyle />
-      <SEO title="Cryptik Blog List" />
+      <SEO title="News" />
       <Navigation />
-      <BlogItems />
-      <Footer />
+      <BlogItems categoryName={"News"}/>
+      <Footer/>
     </Layout>
   </ThemeProvider>
 )
-export default BlogList
+export default BlogGrid

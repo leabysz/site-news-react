@@ -7,23 +7,25 @@ import Text from "reusecore/Text"
 import Heading from "reusecore/Heading"
 import { Container, Row, Col } from "reusecore/Layout"
 
-import data from "assets/data/blog"
-import { BlogPageWrapper } from "./blogBcho.style"
+import PageHeader from "../../components/PageHeader"
+import Sidebar from "../../components/Blog-sidebarNews"
 
-const BlogBchoItems = () => {
+import data from "assets/data/blog"
+import { BlogPageWrapper } from "./blogGrid.style"
+
+const BlogGridItems = ({categoryName}) => {
   return (
-    <BlogPageWrapper id="news">
-        
+    <BlogPageWrapper>
+      <PageHeader title={categoryName} author={{ name: "Alexa", profile: "/#" }} />
+
       <Box className="blog-page-wrapper">
         <Container>
-          <h1>Latest News</h1>
-          <p>Check all the latest news in the blockchain options industry and stay up to date</p>
           <Row>
             <Col className="xs-12 lg-8">
               <Box className="blog-grid-wrapper">
                 <Row>
                   {/* blog posts */}
-                  {(data.posts.slice(0, 2)).map((post, index) => (
+                  {data.posts.map((post, index) => (
                     <Col key={index} className="xs-12 sm-6">
                       <Box className="post-block">
                         <Box className="post-thumb-block">
@@ -59,10 +61,8 @@ const BlogBchoItems = () => {
               </Box>
             </Col>
 
-            <Col className="xs-12 sm-2" style={{"display": "flex"}}>
-              <Link to="/blog-grid" style={{"align-self": "center"}}>
-                <h1>View All <IoIosArrowRoundForward /></h1>
-              </Link>
+            <Col className="xs-12 sm-4">
+              <Sidebar />
             </Col>
           </Row>
         </Container>
@@ -71,4 +71,4 @@ const BlogBchoItems = () => {
   )
 }
 
-export default BlogBchoItems
+export default BlogGridItems

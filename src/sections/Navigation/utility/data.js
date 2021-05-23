@@ -6,27 +6,23 @@ const Data = {
     },
     {
       name: "News",
-      path: "news",
-      offset: "-100",
+      path: "/news"
     },
     {
       name: "Projects",
-      path: "/",
-      offset: "-100",
+      path: "/projects"
     },
     {
       name: "Tools",
-      path: "/",
-      offset: "-100",
+      path: "/tools"
     },
     {
       name: "Learn",
-      path: "/"
+      path: "/learn"
     },
     {
       name: "Service (Coming Soon)",
       path: "/",
-      offset: "-120",
       subItems: [
         {
           name: "AMAs (Coming Soon)",
