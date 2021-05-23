@@ -60,7 +60,7 @@ const BlogBchoItems = () => {
             </Col>
 
             <Col className="xs-12 sm-2" style={{"display": "flex"}}>
-              <Link to="/blog-grid" style={{"align-self": "center"}}>
+              <Link to="/news" style={{"align-self": "center"}}>
                 <h1>View All <IoIosArrowRoundForward /></h1>
               </Link>
             </Col>
