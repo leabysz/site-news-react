@@ -17,10 +17,10 @@ import blogPostThumb6 from 'assets/images/blog/post/blog-post-6.png';
 export default {
     posts: [
         {
-            url: "/blog-single",
-            title: "Now led tedious shy",
-            body: "Answer misery adieus add wooded how nay men before though.Pretended belonging contented mrs suffering.",
-            thumbnail: blogPostThumb1
+            url: "/hegic",
+            title: "HEGIC",
+            body: "Hegic is an on-chain options trading protocol that is powered by hedge contracts and liquidity pools on Ethereum (ETH). A hedge contract is an options-like, on-chain contract that gives the holder or buyer a right to buy or sell an asset at a certain price (strike) as well as imposes an obligation on the writer or seller to buy or sell an asset at a certain time period.",
+            thumbnail: "https://pbs.twimg.com/profile_images/1253495869959266304/tGi6XIS5_400x400.jpg"
         },
         {
             url: "/blog-single",
