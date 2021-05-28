@@ -14,7 +14,7 @@ import blogThumb2 from "assets/images/blog/post/blog-post-3.png"
 
 import { BlogPageWrapper } from "./blogList.style"
 
-const BlogList = ({categoryName}) => {
+const BlogList = ({categoryName, data}) => {
   return (
     <BlogPageWrapper>
       <PageHeader title={categoryName} />

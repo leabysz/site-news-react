@@ -9,10 +9,9 @@ import { Container, Row, Col } from "reusecore/Layout"
 
 import PageHeader from "../../components/PageHeader"
 
-import data from "assets/data/blog"
 import { BlogPageWrapper } from "./blogFull.style"
 
-const BlogGridItems = ({categoryName}) => {
+const BlogGridItems = ({ categoryName, data }) => {
   return (
     <BlogPageWrapper>
       <PageHeader title={categoryName} author={{ name: "Alexa", profile: "/#" }} />
@@ -36,21 +35,15 @@ const BlogGridItems = ({categoryName}) => {
                           </Link>
                         </Box>
                         <Box className="post-content-block">
-                          <Box className="post-meta-block">
-                            <Text as="span">In: </Text>
-                            <Link to="/blog-single">Discussion</Link>
-                            <Text as="span" className="Boxider">
-                              /
-                            </Text>
-                            <Text as="span">15 Sep 2020</Text>
-                          </Box>
                           <Heading as="h2" className="post-title">
                             <Link to="/blog-single">{post.title}</Link>
                           </Heading>
                           <Text className="post-entry"> {post.body} </Text>
-                          <Link to="/blog-single" className="readmore-btn">
-                            see more <IoIosArrowRoundForward />
-                          </Link>
+                          <Box className="post-meta-block">
+                            <Link to={post.siteUrl} target="_blank" className="readmore-btn">
+                              Project site
+                            </Link>
+                          </Box>
                         </Box>
                       </Box>
                     </Col>

@@ -24,6 +24,7 @@ export const BlogPageWrapper = styled.div`
     }
   }
   .post-content-block {
+    height: 29rem;
     border-radius: 0 0 3px 3px;
     border: 1px solid rgba(190,171,223,0.55);
     padding: 25px 35px;

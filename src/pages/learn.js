@@ -11,13 +11,15 @@ import Footer from "sections/Footer";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
 
+import dataLearn from "assets/data/learn/indexLearn.js";
+
 const BlogList = () => (
   <ThemeProvider theme={theme}>
     <Layout>
       <GlobalStyle />
       <SEO title="Learn" />
       <Navigation />
-      <BlogItems categoryName={"Learn"}/>
+      <BlogItems categoryName={"Learn"} data={dataLearn} />
       <Footer />
     </Layout>
   </ThemeProvider>
