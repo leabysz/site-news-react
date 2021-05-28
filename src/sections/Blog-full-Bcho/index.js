@@ -27,16 +27,14 @@ const BlogGridItems = ({ categoryName, data }) => {
                     <Col key={index} className="xs-12 sm-6 md-4">
                       <Box className="post-block">
                         <Box className="post-thumb-block">
-                          <Link to="/blog-single">
                             <img
                               src={post.thumbnail}
                               alt="cryptik blog"
                             />
-                          </Link>
                         </Box>
                         <Box className="post-content-block">
                           <Heading as="h2" className="post-title">
-                            <Link to="/blog-single">{post.title}</Link>
+                            {post.title}
                           </Heading>
                           <Text className="post-entry"> {post.body} </Text>
                           <Box className="post-meta-block">
