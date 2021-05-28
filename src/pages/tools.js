@@ -7,6 +7,8 @@ import Navigation from "sections/Navigation";
 import BlogItems from "sections/Blog-full-Bcho";
 import Footer from "sections/Footer";
 
+import data from "assets/data/tools/indexTools.js";
+
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
 
@@ -16,7 +18,7 @@ const BlogGrid = () => (
       <GlobalStyle />
       <SEO title="Tools"/>
       <Navigation />
-      <BlogItems categoryName={"Tools"}/>
+      <BlogItems categoryName={"Tools"} data={data}/>
       <Footer/>
     </Layout>
   </ThemeProvider>
