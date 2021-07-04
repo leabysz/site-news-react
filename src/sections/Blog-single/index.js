@@ -7,24 +7,16 @@ import {
   TiSocialPinterest,
   TiSocialLinkedin,
 } from "react-icons/ti";
-import { IoIosArrowRoundForward } from "react-icons/io"
 
 import { Container, Row, Col } from "reusecore/Layout"
 import Box from "reusecore/Box"
 import Text from "reusecore/Text"
 import Heading from "reusecore/Heading"
 import Image from "reusecore/Image"
-import { List, ListItem } from "reusecore/List"
-import Button from "reusecore/Button"
 import PageHeader from "../../components/PageHeader"
-import Sidebar from "../../components/Blog-sidebar"
+
 
 import BlogThumb from "assets/images/blog/post/blog-post-5.png"
-
-import AuthorThumb2 from "assets/images/testimonial/testimonial-thumb-2.jpg"
-import AuthorThumb3 from "assets/images/testimonial/testimonial-thumb-3.jpg"
-import AuthorThumb4 from "assets/images/testimonial/testimonial-thumb-4.jpg"
-import AuthorThumb5 from "assets/images/testimonial/testimonial-thumb-5.jpg"
 
 import BlogPageWrapper from "./blogSingle.style"
 

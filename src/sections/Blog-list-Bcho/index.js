@@ -21,6 +21,8 @@ const BlogList = ({categoryName, data}) => {
       <Box className="blog-list-wrapper">
         <Container>
               <Row>
+                {/* blog posts */}
+                {data.posts.map((post, index) => (
                 <Col className="xs-12">
                   <Box className="post-block list">
                     <Box className="post-thumb-block">
@@ -50,68 +52,8 @@ const BlogList = ({categoryName, data}) => {
                     </Link>
                   </Box>
                 </Col>
-                <Col className="xs-12">
-                  <Box className="post-block list text-only">
-                    <Heading as="h2" className="post-title">
-                      <Link to="/blog-single">
-                        Friendship contrasted solicitude insipidity in
-                        introduced literature it.
-                      </Link>
-                    </Heading>
-                    <Text className="post-entry">
-                      Readable content of a page when looking at its layout. The
-                      point of using Lorem Ipsum is that it has a more-or-less
-                      normal distribution of letters, as opposed to using
-                      'Content here, content here', making it look like readable
-                      English. Many desktop publishing packages and web page
-                      editors now use
-                    </Text>
-
-                    <Link to="/blog-single" className="readmore-btn">
-                      see more <IoIosArrowRoundForward />
-                    </Link>
-                  </Box>
-                </Col>
-                <Col className="xs-12">
-                  <Box className="post-block list qutoe-post">
-                    <Heading as="h2" className="post-title">
-                      <Link to="/blog-single">
-                        Friendship contrasted solicitude insipidity in
-                        introduced literature it. He seemed denote except as
-                        oppose do spring my.
-                      </Link>
-                    </Heading>
-                  </Box>
-                </Col>
-                <Col className="xs-12">
-                  <Box className="post-block list">
-                    <Box className="post-thumb-block">
-                      <img src={blogThumb2} alt="prime blog page" />
-                      <Box className="post-meta">
-                        <Text as="span">
-                          <Text as="em"> 15 </Text> DEC
-                        </Text>
-                      </Box>
-                    </Box>
-                    <Heading as="h2" className="post-title">
-                      <Link to="/blog-single">
-                        It is a long established fact that
-                      </Link>
-                    </Heading>
-                    <Text className="post-entry">
-                      Readable content of a page when looking at its layout. The
-                      point of using Lorem Ipsum is that it has a more-or-less
-                      normal distribution of letters, as opposed to using
-                      'Content here, content here', making it look like readable
-                      English. Many desktop publishing packages and web page
-                      editors now use
-                    </Text>
-
-                    <Link to="/blog-single" className="readmore-btn">
-                      see more <IoIosArrowRoundForward />
-                    </Link>
-                  </Box>
-                </Col>
+                ))}
+                {/* blog posts end*/}
               </Row>
         </Container>
       </Box>

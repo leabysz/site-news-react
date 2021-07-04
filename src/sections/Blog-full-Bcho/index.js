@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { IoIosArrowRoundForward } from "react-icons/io"
 import Box from "reusecore/Box"
 import Text from "reusecore/Text"
 import Heading from "reusecore/Heading"
